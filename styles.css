@@ -1,6 +1,6 @@
 /* Background and Font */
 body {
-  background: linear-gradient(to right, #fdf6f9, #eef7ff);
+  background: linear-gradient(135deg, #f5efe7, #fffaf5, #fdf6f0);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
@@ -9,11 +9,12 @@ body {
 /* Header */
 header {
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
   padding: 20px;
-  background-color: #a8d8ff; /* soft baby blue */
-  color: #333;
+  background-color: #fffaf5;
+  color: #5a4a42;
+  border-bottom: 1px solid #e5ddd3;
 }
 
 /* Navigation Menu */
@@ -23,7 +24,7 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
-  background-color: #ffd6e8; /* soft pastel pink */
+  background-color: #fffaf5;
 }
 
 nav ul li {
@@ -32,26 +33,27 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #5a4a42;
   padding: 10px 15px;
   display: block;
-  border-radius: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
 /* Hover effect */
 nav ul li a:hover {
-  background-color: #a8d8ff;
-  color: #fff;
+  background-color: #e8b4b8;
+  color: white;
 }
 
 /* Main Sections */
 section {
   padding: 20px;
   margin: 20px;
-  background-color: #ffffff;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.08);
+  background-color: #fffaf5;
+  border-radius: 16px;
+  border: 1px solid #e5ddd3;
+  box-shadow: 0 10px 30px rgba(150,120,100,0.08);
 }
 
 /* Footer */
@@ -59,6 +61,6 @@ footer {
   text-align: center;
   font-size: 13px;
   padding: 15px;
-  background-color: #a8d8ff;
-  color: #333;
+  background-color: #dba39a;
+  color: white;
 }
