@@ -1,8 +1,20 @@
-/* Main Content Flexbox */
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* Background and Font */
+body {
+  background: linear-gradient(135deg, #f5efe7, #fffaf5, #fdf6f0);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #fffaf5;
+  color: #5a4a42;
+  border-bottom: 1px solid #e5ddd3;
 }
 
 /* Navigation Menu */
@@ -11,10 +23,47 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  flex-direction: row;
   gap: 20px;
   background-color: #fffaf5;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #5a4a42;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #e8b4b8;
+  color: white;
+}
+
+/* Main Content Flexbox */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Main Sections */
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fffaf5;
+  border-radius: 16px;
+  border: 1px solid #e5ddd3;
+  box-shadow: 0 10px 30px rgba(150,120,100,0.08);
 }
 
 /* Contact Form Flexbox */
@@ -31,7 +80,7 @@ label {
   color: #5a4a42;
 }
 
-/* Inputs */
+/* Input Fields */
 input,
 textarea {
   padding: 12px;
@@ -43,7 +92,7 @@ textarea {
   transition: border-color 0.3s ease;
 }
 
-/* Hover + Focus */
+/* Hover and Focus */
 input:hover,
 textarea:hover {
   border-color: #dba39a;
@@ -70,7 +119,20 @@ input[type="submit"]:focus {
   background-color: #e8b4b8;
 }
 
-/* Responsive Design */
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 13px;
+  padding: 15px;
+  background-color: #dba39a;
+  color: white;
+}
+
+/* =========================
+   Responsive Design
+   ========================= */
+
+/* Phone */
 @media screen and (min-width: 320px) {
   body {
     min-width: 320px;
@@ -78,9 +140,11 @@ input[type="submit"]:focus {
 
   nav ul {
     flex-direction: column;
+    align-items: center;
   }
 }
 
+/* Tablet */
 @media screen and (min-width: 768px) {
   body {
     min-width: 768px;
@@ -88,9 +152,11 @@ input[type="submit"]:focus {
 
   nav ul {
     flex-direction: row;
+    justify-content: center;
   }
 }
 
+/* Desktop */
 @media screen and (min-width: 1024px) {
   body {
     min-width: 1024px;
@@ -98,5 +164,6 @@ input[type="submit"]:focus {
 
   nav ul {
     flex-direction: row;
+    justify-content: center;
   }
 }
